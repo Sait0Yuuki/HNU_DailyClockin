@@ -196,4 +196,7 @@ if __name__ == '__main__':
     SECRET_KEY = args.secret
     SERVERCHAN_SCKEY = args.sckey
     
+    import logging
+    logging.basicConfig()
+    
     main()
