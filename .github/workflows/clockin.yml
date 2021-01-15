@@ -4,11 +4,11 @@
 name: HNU DailyClockin
 
 on:
-  push:
-    branches: [ main ]
+  #push:
+    #branches: [ main ]
   workflow_dispatch:
-  schedule:
-  - cron: '15 16 * * *'
+  #schedule:
+  #- cron: '15 16 * * *'
 jobs:
   build:
 
