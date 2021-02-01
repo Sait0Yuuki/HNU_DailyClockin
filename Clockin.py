@@ -164,11 +164,11 @@ def clockin(access_cookies):
         'Content-Type':'application/json;charset=UTF-8',
         'Referer': 'https://fangkong.hnu.edu.cn/app/'
     }
-    para = {"Temperature":null,"RealProvince":"广东省","RealCity":"汕头市","RealCounty":"龙湖区",
+    para = {"Temperature":"","RealProvince":"广东省","RealCity":"汕头市","RealCounty":"龙湖区",
             "RealAddress":"长平路龙禧花园23栋201","IsUnusual":"0","UnusualInfo":"","IsTouch":"0",
             "IsInsulated":"0","IsSuspected":"0","IsDiagnosis":"0","tripinfolist":[{"aTripDate":"","FromAdr":"","ToAdr":"","Number":"","trippersoninfolist":[]}],
             "toucherinfolist":[],"dailyinfo":{"IsVia":"0","DateTrip":""},"IsInCampus":"0","IsViaHuBei":"0","IsViaWuHan":"0","InsulatedAddress":"",
-            "TouchInfo":"","IsNormalTemperature":"1","Longitude":null,"Latitude":null}
+            "TouchInfo":"","IsNormalTemperature":"1","Longitude":"","Latitude":""}
     
     response = requests.post(url, headers=headers, json=para, cookies=access_cookies)
     print(response.text)
