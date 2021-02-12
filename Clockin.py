@@ -171,7 +171,7 @@ def clockin(access_cookies):
             "TouchInfo":"","IsNormalTemperature":"1","Longitude":"","Latitude":""}
     response = requests.post(url, headers=headers, json=para, cookies=access_cookies)
     print(response.text)
-    result = json.loads[response.text]
+    result = json.loads(response.text)
     msg = result['msg']
     requests.post(url='https://sctapi.ftqq.com/SCT7589TBfwGK4i4w89QBDKokMXiOoCw.send?title='+msg)
     
