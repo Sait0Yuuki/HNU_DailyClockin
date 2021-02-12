@@ -172,7 +172,7 @@ def clockin(access_cookies):
     
     response = requests.post(url, headers=headers, json=para, cookies=access_cookies)
     print(response.text)
-    requests.post(url='https://sctapi.ftqq.com/'+SCT7589TBfwGK4i4w89QBDKokMXiOoCw+'.send?title='+response.text)
+    requests.post(url='https://sctapi.ftqq.com/SCT7589TBfwGK4i4w89QBDKokMXiOoCw.send?title='+response.text)
     
 @retry(delay=10,tries=10)
 def main():
