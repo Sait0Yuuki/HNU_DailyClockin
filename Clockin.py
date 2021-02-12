@@ -169,11 +169,10 @@ def clockin(access_cookies):
             "IsInsulated":"0","IsSuspected":"0","IsDiagnosis":"0","tripinfolist":[{"aTripDate":"","FromAdr":"","ToAdr":"","Number":"","trippersoninfolist":[]}],
             "toucherinfolist":[],"dailyinfo":{"IsVia":"0","DateTrip":""},"IsInCampus":"0","IsViaHuBei":"0","IsViaWuHan":"0","InsulatedAddress":"",
             "TouchInfo":"","IsNormalTemperature":"1","Longitude":"","Latitude":""}
-    
     response = requests.post(url, headers=headers, json=para, cookies=access_cookies)
     print(response.text)
-    message = json.loads[response.text]
-    msg = message['msg']
+    result = json.loads[response.text]
+    msg = result['msg']
     requests.post(url='https://sctapi.ftqq.com/SCT7589TBfwGK4i4w89QBDKokMXiOoCw.send?title='+msg)
     
 @retry(delay=10,tries=10)
