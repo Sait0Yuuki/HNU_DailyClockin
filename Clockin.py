@@ -170,7 +170,7 @@ def clockin(access_cookies):
     print(response.text)
     result = json.loads(response.text)
     msg = result['msg']
-    requests.post(url='https://sctapi.ftqq.com/SCT7589TBfwGK4i4w89QBDKokMXiOoCw.send?title='+msg)
+    requests.post(url='https://api.day.app/dnY9hTnsvRehNyaPPRvJAX/'+msg)
     
 @retry(delay=10,tries=10)
 def main():
