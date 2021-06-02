@@ -93,11 +93,11 @@ def clockin(access_cookies):
 @retry(delay=10,tries=10)
 def main():
     global SECRET_ID, SECRET_KEY, ID, PASSWORD, BARK
-    SECRET_ID: str = os.environ.get('SECRET_ID', None)
-    SECRET_KEY: str = os.environ.get('SECRET_KEY', None)
-    ID: str = os.environ.get('ID', None)
-    PASSWORD: str = os.environ.get('PASSWORD', None)
-    BARK: str = os.environ.get('BARK', None)
+    SECRET_ID = os.environ.get('SECRET_ID', None)
+    SECRET_KEY = os.environ.get('SECRET_KEY', None)
+    ID = os.environ.get('ID', None)
+    PASSWORD = os.environ.get('PASSWORD', None)
+    BARK = os.environ.get('BARK', None)
 
     token = fetch_verifyimage()
     vercode = fetch_code(token)
