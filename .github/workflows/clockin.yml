@@ -25,5 +25,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Clockin
+      env:
+        SECRET_ID: ${{ secrets.SECRET_ID }}
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        ID: ${{ secrets.ID }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        BARK: ${{ secrets.BARK }}
       run: |
-        python Clockin.py ${{secrets.LOGIN_ID}} ${{secrets.LOGIN_PASSWORD}} ${{secrets.BAIDU_API_KEY}} ${{secrets.BAIDU_SECRET_KEY}} ${{secrets.SERVERCHAN_SCKEY}}
+        python Clockin.py
