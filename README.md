@@ -8,11 +8,11 @@
 
 | secrets          | 说明           | 备注                                                   |
 | ---------------- | -------------- | ------------------------------------------------------ |
-| BAIDU_API_KEY    | 百度OCR API    |                                                        |
-| BAIDU_SECRET_KEY | 百度OCR SECRET |                                                        |
-| LOGIN_ID         | 打卡账号       |                                                        |
-| LOGIN_PASSWORD   | 打卡密码       |                                                        |
-| SERVERCHAN_SCKEY | Sever酱SCKEY   | 用于微信推送打卡通知，参考http://sc.ftqq.com/3.version |
+| SECRET_ID    | TX OCR API    |                                                        |
+| SECRET_KEY | TX OCR SECRET |                                                        |
+| ID         | 打卡账号       |                                                        |
+| PASSWORD   | 打卡密码       |                                                        |
+| BARK |   |  |
 
 3. 打开仓库的action
 + action触发机制
