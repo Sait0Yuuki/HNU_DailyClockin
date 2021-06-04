@@ -8,7 +8,7 @@
 
 | secrets          | 说明           | 备注                                                   |
 | ---------------- | -------------- | ------------------------------------------------------ |
-| SECRET_ID    | TX OCR API    |                                                        |
+| SECRET_ID    | TX OCR API    |      https://cloud.tencent.com/login?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2Fcam%2Fcapi                                                  |
 | SECRET_KEY | TX OCR SECRET |                                                        |
 | ID         | 打卡账号       |                                                        |
 | PASSWORD   | 打卡密码       |                                                        |
